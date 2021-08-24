@@ -1,0 +1,40 @@
+@use "./variables";
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: 0 auto;
+
+    label {
+        color: $dark-text-color;
+        text-transform: uppercase;
+        margin: 10px;
+    }
+
+    input {
+        height: 60px;
+        border: 0;
+        margin: 10px;
+        border-radius: 5px;
+        padding: 0 20px;
+        font-size: 1.5rem;
+        color: #4b4b4b;
+
+        &:focus-visible {
+            outline-offset: 0;
+        }
+    }
+
+    button {
+        width: 200px;
+        align-self: center;
+        margin: 20px 0;
+        height: 60px;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        border: 0px;
+        color: grey;
+    }
+
+}
