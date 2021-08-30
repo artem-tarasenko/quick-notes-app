@@ -1,6 +1,68 @@
-.text {
-    color: red;
-    &:hover {
-        font-size: 2em;
+.note {
+    // border: 1px solid hsl(0, 0%, 90%);
+    min-width: 200px;
+    margin: 10px;
+    box-shadow: 3px 3px 5px hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 100%);
+    
+    .header {
+        padding: 10px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 5px;
+        border-bottom: 1px solid hsl(200, 30%, 90%);
+        background-color: hsl(230, 25%, 85%);
+        
+        svg {
+            color: hsl(230, 30%, 60%);
+            transition: all 200ms ease-in-out;
+            cursor: pointer;
+            &:hover {
+                color: hsl(200, 60%, 40%);
+            }
+        }
+        
     }
+
+    .body {
+        padding: 10px;
+    }
+
+    .panel {
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        color: hsl(249, 30%, 70%);
+        background-color: hsl(230, 30%, 95%);
+        
+    }
+
+    .bottomBtn {
+        padding: 5px;
+        border-radius: 5px;
+        height: 30px;
+        width: 30px;
+        border: 1px solid hsl(200, 30%, 90%);
+        color: hsl(200, 30%, 30%);
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 3px;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+        &:hover {
+            border: 2px solid hsl(200, 30%, 90%);
+            color: hsl(200, 60%, 60%)
+        }
+    }
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        color: rgb(95, 95, 95);
+    }
+
+
 }

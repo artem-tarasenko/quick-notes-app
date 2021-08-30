@@ -1,24 +1,28 @@
-@use "./variables";
+@import "./variables";
 
 .loginForm {
     display: flex;
     flex-direction: column;
     width: 40vw;
     margin: 0 auto;
+    padding: 60px 30px;
+    border: 1px solid #c9c9c9;
+    background-color: #e2e2e2;
+    border-radius: 10px;
 
     label {
         color: $dark-text-color;
         text-transform: uppercase;
-        margin: 10px;
+        margin: 10px 0 0 10px;
     }
 
     input {
-        height: 60px;
+        height: 40px;
         border: 0;
-        margin: 10px;
+        margin: 5px 10px;
         border-radius: 5px;
         padding: 0 20px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: #4b4b4b;
 
         &:focus-visible {
@@ -30,11 +34,17 @@
         width: 200px;
         align-self: center;
         margin: 20px 0;
-        height: 60px;
-        font-size: 1.5rem;
+        height: 40px;
+        font-size: 1.2rem;
         border-radius: 5px;
         border: 0px;
         color: grey;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            background-color: rgb(255, 255, 255);
+            transition: all 200ms ease-in-out;
+        }
     }
 
 }

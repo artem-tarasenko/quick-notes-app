@@ -1,0 +1,7 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-auto-rows: minmax(200px, 1fr);
+    justify-content: center;
+}
+

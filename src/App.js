@@ -1,13 +1,12 @@
 import React from "react";
 import styles from "./App.scss";
-import Note from "./components/Note.jsx";
+import NotesView1 from "./components/NotesView1.jsx";
 import LoginForm from "./components/auth/LoginForm.jsx";
 
 function App() {
   return <React.Fragment>
 
-    <LoginForm />
-
+    <NotesView1 />
 
   </React.Fragment>
 }
